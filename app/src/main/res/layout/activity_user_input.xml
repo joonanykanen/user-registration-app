@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
@@ -67,29 +68,37 @@
             android:id="@+id/imageRadioGroup"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/degreeProgramEditText"
+            android:layout_marginTop="16dp">
 
             <RadioButton
                 android:id="@+id/imageRadioButton1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:button="@drawable/image_1" />
+                android:drawableTop="@drawable/image_1"
+                android:button="@android:color/transparent"/>
 
             <RadioButton
                 android:id="@+id/imageRadioButton2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:button="@drawable/image_2" />
-
-            <!-- Lisää lisää radio-painikkeita tarpeen mukaan -->
+                android:drawableTop="@drawable/image_2"
+                android:button="@android:color/transparent"/>
 
         </RadioGroup>
-
 
         <Button
             android:id="@+id/addUserButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/add_user" />
+            android:layout_marginTop="16dp"
+            android:text="@string/add_user"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageRadioGroup" />
+
     </LinearLayout>
 </ScrollView>

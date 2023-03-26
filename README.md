@@ -4,7 +4,7 @@ User Registration App is an Android application that helps users register for a 
 
 Preview:
 
-![multi app preview](https://raw.githubusercontent.com/joonanykanen/user-registration-app/main/public/preview_shot.png)
+![multi app preview](https://raw.githubusercontent.com/joonanykanen/user-registration-app/main/preview_shot.png)
 
 ## Features
 

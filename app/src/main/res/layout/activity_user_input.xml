@@ -78,14 +78,15 @@
                 android:id="@+id/imageRadioButton1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:drawableTop="@drawable/image_1"
-                android:button="@android:color/transparent"/>
+                android:drawableTop="@drawable/custom_radio_button_1"
+                android:button="@android:color/transparent"
+                android:layout_marginEnd="10dp"/>
 
             <RadioButton
                 android:id="@+id/imageRadioButton2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:drawableTop="@drawable/image_2"
+                android:drawableTop="@drawable/custom_radio_button_2"
                 android:button="@android:color/transparent"/>
 
         </RadioGroup>

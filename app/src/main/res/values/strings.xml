@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">UserRegistrationApp</string>
+    <string name="add_user">Lisää käyttäjä</string>
+    <string name="list_users">Listaa käyttäjät</string>
 </resources>

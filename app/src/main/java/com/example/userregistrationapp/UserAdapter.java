@@ -20,12 +20,17 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder> {
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        // TODO: Implement this method
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.user_list_item, parent, false);
+        return new ViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        // TODO: Implement this method
+        User user = users.get(position);
+        holder.firstNameTextView.setText(user.getFirstName());
+        holder.lastNameTextView.setText(user.getLastName());
+        holder.emailTextView.setText(user.getEmail());
+        holder.degreeProgramTextView.setText(user.getDegreeProgram());
     }
 
     @Override
@@ -38,7 +43,10 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder> {
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            // TODO: Initialize the TextViews
+            firstNameTextView = itemView.findViewById(R.id.firstNameTextView);
+            lastNameTextView = itemView.findViewById(R.id.lastNameTextView);
+            emailTextView = itemView.findViewById(R.id.emailTextView);
+            degreeProgramTextView = itemView.findViewById(R.id.degreeProgramTextView);
         }
     }
 }

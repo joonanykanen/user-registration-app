@@ -1,8 +1,10 @@
 package com.example.userregistrationapp;
 
+import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -13,9 +15,11 @@ import java.util.ArrayList;
 public class UserListAdapter extends RecyclerView.Adapter<UserListAdapter.UserViewHolder> {
 
     private ArrayList<User> users;
+    private Context context;
 
-    public UserListAdapter(ArrayList<User> users) {
+    public UserListAdapter(ArrayList<User> users, Context context) {
         this.users = users;
+        this.context = context;
     }
 
     @NonNull
@@ -28,9 +32,12 @@ public class UserListAdapter extends RecyclerView.Adapter<UserListAdapter.UserVi
     @Override
     public void onBindViewHolder(@NonNull UserViewHolder holder, int position) {
         User user = users.get(position);
-        holder.nameTextView.setText(user.getFirstName() + " " + user.getLastName());
+        holder.nameTextView.setText(String.format("%s %s", user.getFirstName(), user.getLastName()));
         holder.emailTextView.setText(user.getEmail());
         holder.degreeProgramTextView.setText(user.getDegreeProgram());
+
+        int imageId = context.getResources().getIdentifier(user.getImagePath(), "drawable", context.getPackageName());
+        holder.userImageView.setImageResource(imageId);
     }
 
     @Override
@@ -44,15 +51,17 @@ public class UserListAdapter extends RecyclerView.Adapter<UserListAdapter.UserVi
 
     public static class UserViewHolder extends RecyclerView.ViewHolder {
 
-        private TextView nameTextView;
-        private TextView emailTextView;
-        private TextView degreeProgramTextView;
+        TextView nameTextView;
+        TextView emailTextView;
+        TextView degreeProgramTextView;
+        ImageView userImageView;
 
         public UserViewHolder(@NonNull View itemView) {
             super(itemView);
             nameTextView = itemView.findViewById(R.id.nameTextView);
             emailTextView = itemView.findViewById(R.id.emailTextView);
             degreeProgramTextView = itemView.findViewById(R.id.degreeProgramTextView);
+            userImageView = itemView.findViewById(R.id.userImageView);
         }
     }
 }

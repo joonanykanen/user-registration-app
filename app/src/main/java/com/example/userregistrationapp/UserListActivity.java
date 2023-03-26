@@ -17,7 +17,7 @@ public class UserListActivity extends AppCompatActivity {
         setContentView(R.layout.activity_user_list);
 
         userRecyclerView = findViewById(R.id.userRecyclerView);
-        userListAdapter = new UserListAdapter(UserStorage.getInstance().getUsers());
+        userListAdapter = new UserListAdapter(UserStorage.getInstance().getUsers(), this);
         userRecyclerView.setAdapter(userListAdapter);
         userRecyclerView.setLayoutManager(new LinearLayoutManager(this));
     }

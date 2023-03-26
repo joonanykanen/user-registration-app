@@ -33,6 +33,6 @@ Preview:
 
 4. Press the "Lisää käyttäjä" button to save the information.
 
-## Lisenssi
+## License
 
 [MIT License](LICENSE.md)

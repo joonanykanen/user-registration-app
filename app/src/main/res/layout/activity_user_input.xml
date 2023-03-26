@@ -63,6 +63,29 @@
                 android:text="@string/sahkotekniikka" />
         </RadioGroup>
 
+        <RadioGroup
+            android:id="@+id/imageRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/imageRadioButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/image_1" />
+
+            <RadioButton
+                android:id="@+id/imageRadioButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/image_2" />
+
+            <!-- Lisää lisää radio-painikkeita tarpeen mukaan -->
+
+        </RadioGroup>
+
+
         <Button
             android:id="@+id/addUserButton"
             android:layout_width="wrap_content"

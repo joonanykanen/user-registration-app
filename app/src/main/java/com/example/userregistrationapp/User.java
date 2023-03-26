@@ -1,16 +1,18 @@
 package com.example.userregistrationapp;
 
 public class User {
-    private String firstName;
-    private String lastName;
-    private String email;
-    private String degreeProgram;
+    private final String firstName;
+    private final String lastName;
+    private final String email;
+    private final String degreeProgram;
+    private final String imagePath;
 
-    public User(String firstName, String lastName, String email, String degreeProgram) {
+    public User(String firstName, String lastName, String email, String degreeProgram, String imagePath) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
         this.degreeProgram = degreeProgram;
+        this.imagePath = imagePath;
     }
 
     public String getFirstName() {
@@ -27,5 +29,9 @@ public class User {
 
     public String getDegreeProgram() {
         return degreeProgram;
+    }
+
+    public String getImagePath() {
+        return imagePath;
     }
 }

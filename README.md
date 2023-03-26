@@ -17,7 +17,7 @@ Preview:
 
 1. Clone this repository:
 
-```git clone https://github.com/joonanykanen/user-registration-app.git```
+	```git clone https://github.com/joonanykanen/user-registration-app.git```
 
 2. Open the project in the Android Studio.
 

@@ -2,4 +2,11 @@
     <string name="app_name">UserRegistrationApp</string>
     <string name="add_user">Lisää käyttäjä</string>
     <string name="list_users">Listaa käyttäjät</string>
+    <string name="first_name">Etunimi</string>
+    <string name="last_name">Sukunimi</string>
+    <string name="email">Sähköposti</string>
+    <string name="tietotekniikka">Tietotekniikka</string>
+    <string name="tuotantotalous">Tuotantotalous</string>
+    <string name="laskennallinen_tekniikka">Laskennallinen tekniikka</string>
+    <string name="sahkotekniikka">Sähkötekniikka</string>
 </resources>

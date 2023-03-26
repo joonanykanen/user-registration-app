@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".UserInputActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/firstNameInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/first_name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/lastNameInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/last_name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/emailInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress" />
+
+        <RadioGroup
+            android:id="@+id/degreeProgramRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radioTietotekniikka"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tietotekniikka" />
+
+            <RadioButton
+                android:id="@+id/radioTuotantotalous"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tuotantotalous" />
+
+            <RadioButton
+                android:id="@+id/radioLaskennallinenTekniikka"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/laskennallinen_tekniikka" />
+
+            <RadioButton
+                android:id="@+id/radioSahkotekniikka"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sahkotekniikka" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/addUserButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_user" />
+    </LinearLayout>
+</ScrollView>

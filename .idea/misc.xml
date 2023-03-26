@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Joona/StudioProjects/UserRegistrationApp/app/src/main/res/drawable/image_radio_button_background.xml" value="0.1595" />
+        <entry key="..\:/Users/Joona/StudioProjects/UserRegistrationApp/app/src/main/res/drawable/image_radio_button_selector.xml" value="0.1595" />
+        <entry key="..\:/Users/Joona/StudioProjects/UserRegistrationApp/app/src/main/res/drawable/selected_image_overlay.xml" value="0.1595" />
         <entry key="..\:/Users/Joona/StudioProjects/UserRegistrationApp/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/Joona/StudioProjects/UserRegistrationApp/app/src/main/res/layout/activity_user_input.xml" value="0.325" />
         <entry key="..\:/Users/Joona/StudioProjects/UserRegistrationApp/app/src/main/res/layout/activity_user_list.xml" value="0.325" />

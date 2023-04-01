@@ -9,4 +9,7 @@
     <string name="tuotantotalous">Tuotantotalous</string>
     <string name="laskennallinen_tekniikka">Laskennallinen tekniikka</string>
     <string name="sahkotekniikka">Sähkötekniikka</string>
+    <string name="degree_bachelor">Kandidaatin tutkinto</string>
+    <string name="degree_master">Diplomi-insinöörin tutkinto</string>
+    <string name="degree_doctor">Tekniikan tohtorin tutkinto</string>
 </resources>

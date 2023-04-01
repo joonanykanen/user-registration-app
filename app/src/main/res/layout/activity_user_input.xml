@@ -64,6 +64,32 @@
                 android:text="@string/sahkotekniikka" />
         </RadioGroup>
 
+        <LinearLayout
+            android:id="@+id/degreesCompletedLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp">
+
+            <CheckBox
+                android:id="@+id/degreeBachelorCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/degree_bachelor" />
+
+            <CheckBox
+                android:id="@+id/degreeMasterCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/degree_master" />
+
+            <CheckBox
+                android:id="@+id/degreeDoctorCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/degree_doctor" />
+        </LinearLayout>
+
         <RadioGroup
             android:id="@+id/imageRadioGroup"
             android:layout_width="match_parent"

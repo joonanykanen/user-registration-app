@@ -10,12 +10,17 @@ import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
+import java.util.ArrayList;
+
 public class UserInputActivity extends AppCompatActivity {
+
+    private SharedPreferencesManager sharedPreferencesManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_input);
+        sharedPreferencesManager = new SharedPreferencesManager(this);
 
         Button addUserButton = findViewById(R.id.addUserButton);
         addUserButton.setOnClickListener(new View.OnClickListener() {
@@ -53,8 +58,10 @@ public class UserInputActivity extends AppCompatActivity {
                 break;
         }
 
+        ArrayList<User> userList = sharedPreferencesManager.loadUserList();
         User newUser = new User(firstName, lastName, email, degreeProgram, imagePath);
-        UserStorage.getInstance().addUser(newUser);
+        userList.add(newUser);
+        sharedPreferencesManager.saveUserList(userList);
 
         finish();
     }

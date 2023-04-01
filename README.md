@@ -1,6 +1,6 @@
 # User Registration App
 
-User Registration App is an Android application that helps users register for a service. The application provides an easy way for users to enter personal information such as first and last name, email address, educational program and select a profile picture.
+User Registration App is an Android application that helps users register for a service. The application provides an easy way for users to enter personal information such as first and last name, email address, educational program, completed degrees and select a profile picture.
 
 Preview:
 
@@ -12,6 +12,11 @@ Preview:
 * Entering the user's email address
 * Selecting the user's educational program using a RadioGroup
 * Selecting the user's profile picture from two images presented as RadioButtons
+* Loading user information automatically when the application starts
+* Saving user information automatically when a new user is added
+* Listing users alphabetically by last name using RecyclerView
+* Selecting the user's completed degrees using CheckBoxes
+* Displaying the user's completed degrees in a list using RecyclerView
 
 ## Installation
 
@@ -31,7 +36,9 @@ Preview:
 
 3. Select a profile picture that will be displayed in the application.
 
-4. Press the "Lisää käyttäjä" button to save the information.
+4. Choose the degrees you have already completed using the CheckBoxes.
+
+5. Press the "Lisää käyttäjä" button to save the information.
 
 ## License
 

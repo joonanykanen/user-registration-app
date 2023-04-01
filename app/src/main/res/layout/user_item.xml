@@ -35,4 +35,19 @@
         android:layout_marginEnd="16dp"
         android:layout_marginTop="16dp" />
 
+    <TextView
+        android:id="@+id/completedDegreesTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailTextView"
+        android:layout_marginTop="8dp"
+        android:text="Suoritetut tutkinnot:" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/completedDegreesRecyclerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/completedDegreesTitle" />
+
+
 </RelativeLayout>

@@ -8,6 +8,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
@@ -38,6 +39,10 @@ public class UserListAdapter extends RecyclerView.Adapter<UserListAdapter.UserVi
 
         int imageId = context.getResources().getIdentifier(user.getImagePath(), "drawable", context.getPackageName());
         holder.userImageView.setImageResource(imageId);
+
+        CompletedDegreesAdapter adapter = new CompletedDegreesAdapter(new ArrayList<>(user.getCompletedDegrees()));
+        holder.completedDegreesRecyclerView.setLayoutManager(new LinearLayoutManager(holder.itemView.getContext()));
+        holder.completedDegreesRecyclerView.setAdapter(adapter);
     }
 
     @Override
@@ -55,6 +60,8 @@ public class UserListAdapter extends RecyclerView.Adapter<UserListAdapter.UserVi
         TextView emailTextView;
         TextView degreeProgramTextView;
         ImageView userImageView;
+        TextView completedDegreesTitle;
+        RecyclerView completedDegreesRecyclerView;
 
         public UserViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -62,6 +69,8 @@ public class UserListAdapter extends RecyclerView.Adapter<UserListAdapter.UserVi
             emailTextView = itemView.findViewById(R.id.emailTextView);
             degreeProgramTextView = itemView.findViewById(R.id.degreeProgramTextView);
             userImageView = itemView.findViewById(R.id.userImageView);
+            completedDegreesRecyclerView = itemView.findViewById(R.id.completedDegreesRecyclerView);
+            completedDegreesTitle = itemView.findViewById(R.id.completedDegreesTitle);
         }
     }
 }
